@@ -14,4 +14,4 @@ def list_all(mongo_collection, **kwargs):
         _id of the new document
     """
 
-    return mongo_collection.insert_one(kwargs).insert_id
+    return mongo_collection.insert_one(kwargs).inserted_id
