@@ -3,7 +3,7 @@
 collection based on kwargs
 """
 
-def insert_new(mongo_collection, **kwargs):
+def insert_school(mongo_collection, **kwargs):
     """
     Parameters
         mongo_collection: pymongo collection object
