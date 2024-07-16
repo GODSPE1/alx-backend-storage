@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This modules defines a function that returns the list of
 school having a specific topic
 """
