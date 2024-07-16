@@ -11,4 +11,4 @@ def schools_by_topic(mongo_collection, topic):
         topic: will be topic searched
     """
 
-    return list(mongo_collection.schools_by_topic.find({topic: "topic"}))
+    return list(mongo_collection.schools_by_topic.find({topic: "topics"}))
