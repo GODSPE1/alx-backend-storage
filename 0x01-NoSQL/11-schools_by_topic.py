@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""This modules defines a function that returns the list of
-school having a specific topic
+"""This module defines a function that returns the list of
+schools having a specific topic
 """
-
 
 def schools_by_topic(mongo_collection, topic):
     """
-    Parameter
+    Parameters
         mongo_collection: pymongo collection object
-        topic: will be topic searched
+        topic: string, the topic to search for
+    Returns
+        A list of schools having the specified topic
     """
-
-    return list(mongo_collection.schools_by_topic.find({topic: "topic"}))
+    # Query to find documents where 'topics' field contains the specified topic
+    query = {"topics": topic}
+    
+    # Execute the query and return the list of matching documents
+    return list(mongo_collection.find(query))
