@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """This module defines a function that count the number of logs"""
 
-
 import pymongo
 from pymongo import MongoClient
 
@@ -11,7 +10,7 @@ def get_nginx_log_stats(mongo_collection):
     total_logs = mongo_collection.count()({})
     print(f"{total_logs} logs")
 
-    methods = ["GET", "POST", "PATCH", "DELETE"]
+    methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print("Methods:")
 
     for method in methods:
