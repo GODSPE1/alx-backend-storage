@@ -99,7 +99,7 @@ def replay(fn: Callable):
         ]
 
         for i, o in zip(inputs, outputs):
-            print(f"{function_name}(*{i}) -> {o}")  
+            print(f"{function_name}(*{i}) -> {o}")
 
 
 class Cache:
